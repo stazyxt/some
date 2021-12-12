@@ -672,12 +672,21 @@ li {
     
 
 }
-.choose_tour_item_link:hover{
+.choose_tour_item_link:focus{
     padding-bottom:6px;
     color: #EFA501;
     border-bottom-style:  solid ;
     border-bottom-width: 2px;
-    border-bottom-color: #EFA501 ;
+    border-bottom-color: #EFA501;
+  
+
+}
+.choose_tour_item_link:hover{
+    padding-bottom:6px;
+    color: #1B1F2B;
+    border-bottom-style:  solid ;
+    border-bottom-width: 2px;
+    border-bottom-color: #1B1F2B ;
   
 
 }
@@ -758,8 +767,8 @@ li {
     line-height: 42,7px;
     max-height: 86px;
     max-width: 270px;
-    border-radius: nullpx;
-    margin:50px 50px  16px 50px;
+   
+    margin:50px 50px 16px 50px;
 }
 .tour_price{
     color: white;
@@ -770,43 +779,48 @@ li {
     padding-top: 3px;
     max-width: 270px;
     max-height: 24px;
-    margin-bottom:270px;
+    margin-bottom:280px;
     margin-left: 50px;
     margin-right: 50px;
 }
 .more_info_and_arrow{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    gap:16px;
-    
-    
-    
-
+    display: grid;
+    padding-right: 32px;
+     
 }
 .more_info_about_tour{
+    
+    display:block;
     color:white;
     font-weight: 700;
     font-size: 23px;
     line-height: 28,06px;
-    width:190px;
-    height: 42px;
-    
+    text-decoration: none;
+    width:172px;
+    height: 28px; 
     margin-left: 50px;
+    margin-right: 200px;
+    text-align: left; 
+    
     
     
 
 }
-.arrow{
-    background-image: url("../img/Vector-Arrow.png");
+.more_info_about_tour::after{
+    content: url("../img/Vector-Arrow.png");
     
+    padding-left:10px;
     height: 15px;
     width: 22px;
-}
-.more_info_and_arrow:hover{
-    background-color: #286562;
-    color:white;
+} 
+
+.choose_tour_item1:hover{  
+    transform: scale(1.2);
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+      
     
 }
     
