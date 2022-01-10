@@ -316,13 +316,13 @@ li {
     height: 15px;
     width: 22px;
 }
-@keyframes anm {
+@keyframes scale {
     to {
         background-size: 120% 120%;
     }
 }
 .choose_tour_card:hover {
-    animation: anm 0.3s ease forwards;
+    animation: scale 0.3s ease forwards;
 }
 
 /*Choose yor tour foto end*/
