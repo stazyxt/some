@@ -842,36 +842,88 @@ li {
 
 .user__form__constructor {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-self: center;
-    align-content: flex-start;
     max-width: 1170px;
     min-height: 986px;
     background-color: white;
     border-radius: 50px;
     margin-bottom: 135px;
+    width: 100%;
+    gap:33px;
 }
 
 .form_container_placer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 70px;
-    gap: 30px;
+   
 }
-
+.buttons_radio_check_container{
+   
+    max-width: 1030px;
+    height: 217px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    gap:30px;
+    
+}
+.first_row_inputs{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-bottom: 30px;
+}
+.second_row_inputs{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-bottom: 30px;
+}
+.third_row_inputs{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-bottom: 30px;
+}
+.forth_row_inputs{
+    display: block;
+    height: 100%;
+    height:188px;
+   
+    
+}
 .form_element_container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 4px;
-    height: 104px;
-    max-width: 500px;
-    width: 50%;
+    max-height: 104px;
+    width: 50%; 
+    
+    
+}
+.check_license label{
+    color:#A6A6A6;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+}
+
+ em{
+    color: black;
+}
+
+
+.form_comment_container{
+   
+    max-height: 188px;
+    width:100%;
+    
 }
 
 .input_properties {
@@ -886,15 +938,37 @@ li {
     line-height: 142%;
     width: 100%;
     color: #A6A6A6;
-    padding: 20px;
+    padding:20px;
+}
+.textarea_properties{
+    background-color: #F9F7F4;
+    height: 152px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142%;
+    width: 100%;
+    color: #A6A6A6;
+    padding:20px;
+
 }
 
 .input_properties select.option {
     padding-left: -10px;
 }
+.buttons_radio_check_container p{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 142%;
+}
 
 .form_input_action {
-    margin-top: 8px;
+     margin-top: 8px; 
 }
 
 .form_element_caption {
@@ -905,24 +979,68 @@ li {
     color: #1B1F2B;
 }
 
-.form_element_container textarea {
+ textarea {
+    border: none;
+    max-height: 152px;
+    resize: none;   
+    
+  
+   
+} 
+
+.buttons_block{
     display: flex;
     flex-direction: row;
-    border: none;
-    background-color: #F9F7F4;
-    height: 152px;
-    resize: none;
+    gap:30px;
+}
+.submit_button{
+    width:235px;
+    height: 58px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142%;
+    background-color:#286562;
+    color:white;
+    border:none;
     border-radius: 10px;
+
+}
+.reset_button{
+    width:235px;
+    height: 58px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142%;
+    background-color:#E0F0E5;
+    color: #286562;
+    border:none;
+    border-radius:10px;
+
+
+}
+.radio_check{
+    
+   
 }
 
-.construct_form_field_label {}
+
+input[type=checkbox]{
+     display: none;
+      }
+input[type=radio]{
+        display: none;
+      }
+
+
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
     text-transform: uppercase;
-}
+} 
 
 .form_element_container:nth-child(7) {
     max-width: 1030px;

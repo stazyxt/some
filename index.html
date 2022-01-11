@@ -194,82 +194,112 @@
 
             <form class="user__form__constructor">
                 <div class="form_container_placer">
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="username" class="form_element_caption">Имя</label>
+                    <div class="first_row_inputs">
+                        <div class="form_element_container">
+
+                            <div class="construct_form_field_label">
+                                <label for="username" class="form_element_caption">Имя</label>
+                            </div>
+                            <div class="form_input_action">
+                                <input type="text" id="username" name="username" placeholder="Введите Ваше имя"
+                                    class="input_properties">
+                            </div>
                         </div>
-                        <div class="form_input_action">
-                            <input type="text" id="username" name="username" placeholder="Введите Ваше имя"
-                                class="input_properties">
+
+                        <div class="form_element_container">
+                            <div class="construct_form_field_label">
+                                <label for="destination-field-id" class="form_element_caption">Направление</label>
+                            </div>
+                            <div class="form_input_action">
+                                <select class="input_properties">
+                                    <option value="Куда хотите ехать" default selected hidden>Куда хотите ехать?
+                                    </option>
+                                </select>
+                            </div>
                         </div>
                     </div>
+                    <div class="second_row_inputs">
+                        <div class="form_element_container">
+                            <div class="construct_form_field_label">
+                                <label for="username" class="form_element_caption">Email</label>
+                            </div>
+                            <div class="form_input_action">
+                                <input type="email" id="email" name="email" placeholder="example@mail.com"
+                                    class="input_properties">
+                            </div>
+                        </div>
 
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="destination-field-id" class="form_element_caption">Направление</label>
+
+                        <div class="form_element_container">
+                            <div class="construct_form_field_label">
+                                <label for="telnumber" class="form_element_caption">Телефон</label>
+                            </div>
+                            <div class="form_input_action">
+                                <input type="tel" id="telnumber" name="telnumber"
+                                    placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="input_properties">
+                            </div>
                         </div>
-                        <div class="form_input_action">
-                            <select class="input_properties">
-                                <option value="Куда хотите ехать" default selected hidden>Куда хотите ехать?</option>
-                            </select>
+
+                    </div>
+                    <div class="third_row_inputs">
+                        <div class="form_element_container">
+                            <div class="construct_form_field_label">
+                                <label for="username" class="form_element_caption">Дата от</label>
+                            </div>
+                            <div class="form_input_action">
+                                <input type="date" id="from_date" name="from_date" placeholder="ДД.ММ.ГГГГ"
+                                    class="input_properties">
+                            </div>
                         </div>
+
+
+                        <div class="form_element_container">
+                            <div class="construct_form_field_label">
+                                <label for="username" class="form_element_caption">Дата до</label>
+                            </div>
+                            <div class="form_input_action">
+                                <input type="date" id="until_date" name="until_date" placeholder="ДД.ММ.ГГГГ"
+                                    class="input_properties">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forth_row_inputs">
+
+                        <div class="form_comment_container">
+                            <div class="construct_form_field_label">
+                                <label for="comments" class="form_element_caption">Комментарий</label>
+                            </div>
+                            <div class="form_input_action">
+                                <textarea name="comments" id="comments" class="textarea_properties">
+                                </textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons_radio_check_container">
+                    <p>Вам есть 18 лет?</p>
+                    <div>
+                        <input type="radio" id="yescheck" name="checkit" value="yescheck">
+                        <label for="yescheck" class="form_element_caption">Да</label>
+
+                        <input type="radio" id="nocheck" name="checkit" value="nocheck">
+                        <label for="nocheck" class="form_element_caption">Нет</label>
+                    </div>
+
+                    <div class="check_license">
+                        <input type="checkbox">
+                        <label for="checklicense">Нажимая кнопку, я принимаю условия <em>Лицензионного
+                                договора</em></label>
+                    </div>
+                    <div class="buttons_block">
+                        <input type="submit" value="Найти тур" class="submit_button">
+
+                        <input type="reset" value="Сбросить" class="reset_button">
+
                     </div>
 
 
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="username" class="form_element_caption">Email</label>
-                        </div>
-                        <div class="form_input_action">
-                            <input type="email" id="email" name="email" placeholder="example@mail.com"
-                                class="input_properties">
-                        </div>
-                    </div>
-
-
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="telnumber" class="form_element_caption">Телефон</label>
-                        </div>
-                        <div class="form_input_action">
-                            <input type="tel" id="telnumber" name="telnumber"
-                                placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="input_properties">
-                        </div>
-                    </div>
-
-
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="username" class="form_element_caption">Дата от</label>
-                        </div>
-                        <div class="form_input_action">
-                            <input type="date" id="from_date" name="from_date" placeholder="ДД.ММ.ГГГГ"
-                                class="input_properties">
-                        </div>
-                    </div>
-
-
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="username" class="form_element_caption">Дата до</label>
-                        </div>
-                        <div class="form_input_action">
-                            <input type="date" id="until_date" name="until_date" placeholder="ДД.ММ.ГГГГ"
-                                class="input_properties">
-                        </div>
-                    </div>
-
-
-                    <div class="form_element_container">
-                        <div class="construct_form_field_label">
-                            <label for="comments" class="form_element_caption">Комментарий</label>
-                        </div>
-                        <div class="form_input_action">
-                            <textarea name=" comments " id="comments " cols="30 " rows="10 " class="input_properties ">
-                            </textarea>
-
-                        </div>
-                    </div>
                 </div>
 
 
