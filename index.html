@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Идеальные путешествия существуют</title>
 
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,7 +17,7 @@
             <div class="header_wrapper">
                 <div class="header_logo">
                     <a href="/" class="header_logo-link">
-                        <img src="./img/header_logo.png" alt="Собери свой тур" class="header_logo-pic">
+                        <img src="./img/svg/header_logo.svg" alt="Собери свой тур" class="header_logo-pic">
 
                     </a>
                 </div>
@@ -58,11 +59,11 @@
                 <p class="intro_subtitle">
                     Идейные соображения высшего порядка, а также рамки и место обучения кадров
                 </p>
-                <form class="search_tour_form">
+                <div class="search_tour_containerfor_button">
                     <p>
-                        <button type="submit" class="search_form_submit">Найти тур</button>
+                        <button type="submit" class="intro_submit_button">Найти тур</button>
                     </p>
-                </form>
+                </div>
 
 
             </div>
@@ -193,111 +194,95 @@
             </p>
 
             <form class="user__form__constructor">
-                <div class="form_container_placer">
-                    <div class="first_row_inputs">
-                        <div class="form_element_container">
 
-                            <div class="construct_form_field_label">
-                                <label for="username" class="form_element_caption">Имя</label>
-                            </div>
-                            <div class="form_input_action">
-                                <input type="text" id="username" name="username" placeholder="Введите Ваше имя"
-                                    class="input_properties">
-                            </div>
-                        </div>
-
-                        <div class="form_element_container">
-                            <div class="construct_form_field_label">
-                                <label for="destination-field-id" class="form_element_caption">Направление</label>
-                            </div>
-                            <div class="form_input_action">
-                                <select class="input_properties">
-                                    <option value="Куда хотите ехать" default selected hidden>Куда хотите ехать?
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="second_row_inputs">
-                        <div class="form_element_container">
-                            <div class="construct_form_field_label">
-                                <label for="username" class="form_element_caption">Email</label>
-                            </div>
-                            <div class="form_input_action">
-                                <input type="email" id="email" name="email" placeholder="example@mail.com"
-                                    class="input_properties">
-                            </div>
-                        </div>
-
-
-                        <div class="form_element_container">
-                            <div class="construct_form_field_label">
-                                <label for="telnumber" class="form_element_caption">Телефон</label>
-                            </div>
-                            <div class="form_input_action">
-                                <input type="tel" id="telnumber" name="telnumber"
-                                    placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="input_properties">
-                            </div>
-                        </div>
+                <div class="user_form_inputs_grid">
+                    <div class="form_element_container cell-name">
+                        <label for="username" class="form_element_caption">Имя</label>
+                        <input type="text" id="username" name="username" placeholder="Введите Ваше имя"
+                            class="input_properties">
 
                     </div>
-                    <div class="third_row_inputs">
-                        <div class="form_element_container">
-                            <div class="construct_form_field_label">
-                                <label for="username" class="form_element_caption">Дата от</label>
-                            </div>
-                            <div class="form_input_action">
-                                <input type="date" id="from_date" name="from_date" placeholder="ДД.ММ.ГГГГ"
-                                    class="input_properties">
-                            </div>
-                        </div>
 
+                    <div class="form_element_container cell-destination">
+                        <label for="destination-field-id" class="form_element_caption">Направление</label>
+                        <select class="select_input_properties ">
+                            <option value="Куда хотите ехать" default selected hidden>Куда хотите ехать
+                            </option>
+                            <option class="select_option_properties">
+                                Осло
+                            </option>
+                            <option>
+                                Амстердам
+                            </option>
+                        </select>
 
-                        <div class="form_element_container">
-                            <div class="construct_form_field_label">
-                                <label for="username" class="form_element_caption">Дата до</label>
-                            </div>
-                            <div class="form_input_action">
-                                <input type="date" id="until_date" name="until_date" placeholder="ДД.ММ.ГГГГ"
-                                    class="input_properties">
-                            </div>
-                        </div>
                     </div>
-                    <div class="forth_row_inputs">
 
-                        <div class="form_comment_container">
-                            <div class="construct_form_field_label">
-                                <label for="comments" class="form_element_caption">Комментарий</label>
-                            </div>
-                            <div class="form_input_action">
-                                <textarea name="comments" id="comments" class="textarea_properties">
-                                </textarea>
 
-                            </div>
+                    <div class="form_element_container cell-email">
+                        <label for="username" class="form_element_caption">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com"
+                            class="input_properties">
+
+                    </div>
+
+
+                    <div class="form_element_container cell-telephone">
+                        <label for="telnumber" class="form_element_caption">Телефон</label>
+                        <input type="tel" id="telnumber" name="telnumber" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+                            class="input_properties">
+
+                    </div>
+
+
+
+                    <div class="form_element_container cell-from-date">
+                        <label for="username" class="form_element_caption">Дата от</label>
+                        <input type="date" id="from_date" name="from_date" placeholder="ДД.ММ.ГГГГ"
+                            class="date_input_properties">
+                    </div>
+
+
+                    <div class="form_element_container cell-until-date">
+                        <label for="username" class="form_element_caption">Дата до</label>
+                        <input type="date" id="until_date" name="until_date" placeholder="ДД.ММ.ГГГГ"
+                            class="date_input_properties">
+                    </div>
+
+
+
+                    <div class="form_element_container cell-comments">
+                        <label for="comments" class="form_element_caption">Комментарий</label>
+                        <textarea name="comments" id="comments" class="textarea_properties">   </textarea>
+                    </div>
+                </div>
+
+
+                <div class="form_element_container cell-radio">
+                    <label for="user_age_choice" class="form_element_caption">Вам есть 18 лет?</label>
+                    <div class="form_radio_buttons_block">
+                        <div class="form_radio">
+                            <input type="radio" id="user_age_choice1" name="checkit" value="yescheck">
+                            <label for="user_age_choice1" class="form_element_caption">Да</label>
+                        </div>
+                        <div class="form_radio">
+                            <input type="radio" id="user_age_choice2" name="checkit" value="nocheck">
+                            <label for="user_age_choice2" class="form_element_caption">Нет</label>
                         </div>
                     </div>
                 </div>
-                <div class="buttons_radio_check_container">
-                    <p>Вам есть 18 лет?</p>
-                    <div>
-                        <input type="radio" id="yescheck" name="checkit" value="yescheck">
-                        <label for="yescheck" class="form_element_caption">Да</label>
 
-                        <input type="radio" id="nocheck" name="checkit" value="nocheck">
-                        <label for="nocheck" class="form_element_caption">Нет</label>
-                    </div>
-
-                    <div class="check_license">
+                <div class="form_element_container cell-checkbox">
+                    <label class="custom-checkbox">
                         <input type="checkbox">
-                        <label for="checklicense">Нажимая кнопку, я принимаю условия <em>Лицензионного
-                                договора</em></label>
-                    </div>
-                    <div class="buttons_block">
-                        <input type="submit" value="Найти тур" class="submit_button">
-
-                        <input type="reset" value="Сбросить" class="reset_button">
-
-                    </div>
+                        <span>Нажимая кнопку, я принимаю условия <em>Лицензионного
+                                договора</em></span>
+                    </label>
+                </div>
+                <div class="form_buttons">
+                    <input type="submit" value="Найти тур" class="submit_button ">
+                    <input type="reset" value="Сбросить" class="reset_button ">
+                </div>
 
 
                 </div>
@@ -532,7 +517,8 @@
                                 Пора в путешествие вместе с нами!
                             </div>
                             <div class="prefooter_email">
-                                Напиши на почту и узнай подробности <br> на <em>yourtour@gmail.com</em>
+                                Напиши на почту и узнай подробности <br> на <a
+                                    href="mailto:vlad@htmlbook.ru">yourtour@gmail.com
                             </div>
                         </div>
 
@@ -555,15 +541,15 @@
         <div class="footer_nav">
             <ul class="footer_list">
                 <li class="footer_item">
-                    <a href="#1" class="insta-link">instagram</a>
+                    <a href="https://www.instagram.com/" class="insta-link">instagram</a>
                 </li>
 
                 <li class="footer_item">
-                    <a href="#1" class="facebook-link">facebook</a>
+                    <a href="https://www.facebook.com/" class="facebook-link">facebook</a>
                 </li>
 
                 <li class="footer_item">
-                    <a href="#1" class="vkontakte-link">vkontakte</a>
+                    <a href="https://vk.com/" class="vkontakte-link">vkontakte</a>
                 </li>
 
 
